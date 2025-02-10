@@ -66,13 +66,13 @@ export default function Navbar() {
 						animate={{ opacity: 1, y: 0 }}
 						exit={{ opacity: 0, y: -20 }}
 						transition={{ duration: 0.3, ease: "easeInOut" }}
-						className="md:hidden fixed top-20 left-0 w-full bg-white shadow-md rounded-b-lg py-4">
+						className="md:hidden fixed top-20 left-0 w-full text-white shadow-md rounded-b-lg py-4">
 						<div className="flex flex-col items-center space-y-4">
 							{navLinks.map((item, index) => (
 								<Link
 									key={index}
 									href={item.path}
-									className="text-gray-700 font-medium hover:text-[rgb(242,177,1)] transition"
+									className=" font-medium hover:text-[rgb(242,177,1)] transition"
 									onClick={() => setIsOpen(false)}>
 									{item.name}
 								</Link>
